@@ -13,7 +13,7 @@ const mongoose = require('mongoose')
 const passport = require('passport')
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/MOBY')
+mongoose.connect('mongodb://localhost/STL')
 const app = express();
 app.use(morgan('dev'));
 
