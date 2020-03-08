@@ -1,13 +1,13 @@
-const express = require('express')
+const express= require("express")
 const router = express.Router()
-const actionReunion = require ('./actionReunion.js')
+const bodyParser= require("body-parser")
+const actionReunion=require("./actionReunion")
+
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
 
 
+router.post("/",actionReunion.actionPostOneReunion)
 
 
-
-router.route('/')
-    .post( (req, res,next)  => {
-
-        actionReunion.enregistrerDiscourtReunion(req,res,next);
-    });
+module.exports= router;

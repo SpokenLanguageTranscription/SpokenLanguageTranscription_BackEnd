@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 const reunionSchema = new Schema(
     {
-        Id: String,
+        idReunion: String,
         createur : String,
         participant : String,
         phrase : String,
