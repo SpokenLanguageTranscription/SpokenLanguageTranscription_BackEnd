@@ -1,10 +1,13 @@
-const router = require('express').Router();
+const express= require("express")
+const router = express.Router()
 const bodyParser= require("body-parser")
+const actionDiscourt=require("./actionDiscourt")
 
+router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
-const actionUser = require('./actionUser');
-const isAuthenticated = (req,res,next) => {
 
+const isAuthenticated = (req,res,next) => {
+    console.log("isAuthReun",res.locals.isAuthenticated)
     if(res.locals.isAuthenticated){
         return next()
 
@@ -27,10 +30,7 @@ const isNotAuthenticated = (req,res,next) => {
 
     }
 }
+router.post("/",actionDiscourt.actionPostOneDiscourt)
 
-router.post('/register',isNotAuthenticated,actionUser.register);
-
-router.post('/login',actionUser.login);
-router.post('/decrypt',isAuthenticated,actionUser.decrypt);
 
 module.exports= router;

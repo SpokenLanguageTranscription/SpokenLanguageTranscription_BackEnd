@@ -1,27 +1,27 @@
-const Reunion  = require('./modelReunion');
-const processReunion = require('./processReunion');
+const Discourt  = require('./modelDiscourt');
+const processDiscourt = require('./processDiscourt');
 
 module.exports={
 
 
-    actionPostOneReunion:(req,res)=>{
+    actionPostOneDiscourt:(req,res)=>{
         if(req.body.idReunion.length<=0){
             res.status(400).send('Aucune code reunion')
         }else{
-            let maReunion= new Reunion({
+            let monDiscourt= new Discourt({
                 idReunion: req.body.idReunion,
-                createur: req.body.createur,
-                participant: req.body.participant,
+                auteur: req.body.auteur,
+                phrase: req.body.phrase,
 
 
             });
-            processReunion.processAddOneReunion(maReunion)
+            processDiscourt.processAddOneDiscourt(monDiscourt)
                 .then((result)=>{
                     res.status(200).send(result)
                 })
                 .catch((err)=>{
                     console.log("err",err)
-                    if(err==500)res.status(500).send("Code reunion utiliser")
+                    if(err==500)res.status(500).send("Code reunion introuvable")
                 })
         }
     },

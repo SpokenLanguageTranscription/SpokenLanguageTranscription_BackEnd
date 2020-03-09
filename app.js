@@ -12,6 +12,7 @@ require('./config/validation/passport')
 const mongoose = require('mongoose')
 const passport = require('passport')
 
+
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/STL')
 const app = express();
@@ -48,21 +49,22 @@ app.use(flash());
 //*********Config********* */
 app.use(ficConfig.activateCors);
 //Affichage des alertes/ variable pour le user*
-
+const jwtutils = require('./Ressources/User/jwt.utils');
 app.use((req,res,next) => {
 
   res.locals.success_messages = req.flash('success')
   res.locals.error_messages = req.flash('error')
-  res.locals.isAuthenticated = req.user ? true:false
 
-
+  let headerAuth = req.headers['authorization'];
+  let userId = jwtutils.getUserId(headerAuth);
+  res.locals.isAuthenticated = userId.id ? true:false
   next()
 
 })
 
 app.use('/users', require('./Ressources/User/routeUser'));
-
-
+app.use('/reunion', require('./Ressources/Reunion/routeReunion'));
+app.use('/discourt', require('./Ressources/Discourt/routeDiscourt'));
 
 app.use((req, res, next) => {
 
