@@ -12,7 +12,7 @@ module.exports={
                         console.log('problème de recherche')
                         reject('problème du callback du recherche')
                     } else{
-                        reject('problème serveur')
+                        resolve(false)
                     }
                 }
             })

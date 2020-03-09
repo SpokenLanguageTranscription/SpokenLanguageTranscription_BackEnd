@@ -6,7 +6,7 @@ module.exports={
 
     actionPostOneReunion:(req,res)=>{
         if(req.body.idReunion.length<=0){
-            res.status(400).send('Aucune phrase à enregistrer')
+            res.status(400).send('Aucune code reunion')
         }else{
             let maReunion= new Reunion({
                 idReunion: req.body.idReunion,

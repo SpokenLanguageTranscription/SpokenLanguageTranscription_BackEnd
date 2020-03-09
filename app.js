@@ -49,14 +49,15 @@ app.use(flash());
 //*********Config********* */
 app.use(ficConfig.activateCors);
 //Affichage des alertes/ variable pour le user*
-
+const jwtutils = require('./Ressources/User/jwt.utils');
 app.use((req,res,next) => {
 
   res.locals.success_messages = req.flash('success')
   res.locals.error_messages = req.flash('error')
-  res.locals.isAuthenticated = req.user ? true:false
 
-
+  let headerAuth = req.headers['authorization'];
+  let userId = jwtutils.getUserId(headerAuth);
+  res.locals.isAuthenticated = userId.id ? true:false
   next()
 
 })
