@@ -3,9 +3,8 @@ const Schema = mongoose.Schema
 const reunionSchema = new Schema(
     {
         idReunion: String,
-        createur : String,
-        participant : String,
-
+        auteur : String,
+        phrase : String,
     }, {
         timestamps : {
             createdAt: 'createdAt',
@@ -14,7 +13,7 @@ const reunionSchema = new Schema(
     }
 )
 
-const Reunion = mongoose.model('reunion',reunionSchema)
-module.exports = Reunion
+const Discourt = mongoose.model('discourt',reunionSchema)
+module.exports = Discourt
 
 
