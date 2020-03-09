@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer')
+/* const nodemailer = require('nodemailer')
 const config = require('../config/mailer')
 const mailgun = require("mailgun-js");
 
@@ -25,4 +25,4 @@ module.exports = {
 } )
     }
 
-}
+} */
