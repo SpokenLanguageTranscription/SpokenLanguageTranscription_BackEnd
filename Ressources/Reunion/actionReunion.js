@@ -2,7 +2,15 @@ const Reunion  = require('./modelReunion');
 const processReunion = require('./processReunion');
 
 module.exports={
-
+    actionsShowMyReunions:(req,res)=>{
+        processReunion.processShowMyReunions(req.body.email)
+            .then((result)=>{
+                res.status(200).send(result)
+            })
+            .catch((err)=>{
+                res.status(400).send("problème serveur.")
+            })
+    },
     actionShowAllReunion:(req,res)=>{
         processReunion.processShowAllReunion()
             .then((result)=>{

@@ -27,14 +27,25 @@ module.exports={
 
 
 
-
     },processShowAllReunion:()=>{
         return new Promise((resolve,reject)=>{
             Reunion.find((err, reunion)=> {
                 if (err){
                     reject(400)
                 } else {
-                    resolve(JSON.stringify(reunion))
+                    resolve(reunion)
+                    //resolve(JSON.stringify(reunion))
+                }
+            })
+        })
+    },processShowMyReunions:(email)=>{
+        return new Promise((resolve,reject)=>{
+            Reunion.find({ createur: email},(err, reunion)=> {
+                if (err){
+                    reject(400)
+                } else {
+                    //resolve(JSON.stringify(reunion))
+                    resolve(reunion)
                 }
             })
         })
