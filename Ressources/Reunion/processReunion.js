@@ -1,4 +1,5 @@
 const utilsReunion = require("./utilsReunion")
+const Reunion = require("./modelReunion")
 module.exports={
 
     processAddOneReunion:async (newReunion)=>{
@@ -27,6 +28,16 @@ module.exports={
 
 
 
+    },processShowAllReunion:()=>{
+        return new Promise((resolve,reject)=>{
+            Reunion.find((err, reunion)=> {
+                if (err){
+                    reject(400)
+                } else {
+                    resolve(JSON.stringify(reunion))
+                }
+            })
+        })
     },
 
 

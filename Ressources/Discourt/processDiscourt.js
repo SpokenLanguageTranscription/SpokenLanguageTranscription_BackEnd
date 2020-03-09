@@ -1,5 +1,5 @@
 const utilsDiscourt = require("./utilsDiscourt")
-
+const Reunion = require("./modelDiscourt")
 module.exports={
 
     processAddOneDiscourt:async (newDiscourt)=>{
