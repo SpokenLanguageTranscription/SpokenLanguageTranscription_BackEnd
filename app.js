@@ -62,7 +62,7 @@ app.use((req,res,next) => {
 })
 
 app.use('/users', require('./Ressources/User/routeUser'));
-
+app.use('/reunion', require('./Ressources/Reunion/routeReunion'));
 
 
 app.use((req, res, next) => {

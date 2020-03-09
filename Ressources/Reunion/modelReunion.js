@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 const reunionSchema = new Schema(
     {
         idReunion: String,
+        sujet : String,
         createur : String,
         participant : String,
 

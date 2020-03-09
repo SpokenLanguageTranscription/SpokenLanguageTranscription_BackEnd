@@ -1,22 +1,33 @@
-const colReservation = require('./modelsReservation');
-const utilsReservation=require('./utilsReservation')
-const colRoom= require('../compoRoom/modelsRoom')
-const modelsUser = require('../compoUser/modelsUser');
-const processRoom = require('../compoRoom/processRoom');
-const ObjectId = require('mongodb').ObjectID
-const processUser = require('../compoUser/processUser');
-
+const utilsReunion = require("./utilsReunion")
 module.exports={
 
-    processAddOneReunion:(newReunion)=>{
-        return new Promise((resolve,reject) => {
+    processAddOneReunion:async (newReunion)=>{
 
 
-                                    })
+
+            return new Promise((resolve,reject) => {
+               return  utilsReunion.callbackFindReunion(newReunion).then((rst,err)=>{
+                    console.log("result",rst)
+                    if(!rst){
+                        newReunion.save()
+                            .then((result)=>{
+                                resolve({'Reunion enregistrer !': result})
+                            })
+                            .catch((err)=>{
+                                reject(500);
+                            })
+                    }else {
+                        reject(500)
+                    }
+
+                })
+
+            })
+
+
 
 
     },
-
 
 
 }
