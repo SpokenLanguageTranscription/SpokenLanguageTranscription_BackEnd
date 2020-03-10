@@ -15,7 +15,7 @@ const reunionSchema = new Schema(
     }
 )
 
-const Reunion = mongoose.model('reunion',reunionSchema)
+const Reunion = mongoose.model('reunions',reunionSchema)
 module.exports = Reunion
 
 

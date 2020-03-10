@@ -31,6 +31,7 @@ const isNotAuthenticated = (req,res,next) => {
     }
 }
 router.post("/",actionDiscourt.actionPostOneDiscourt)
+router.get("/myDiscourt",actionDiscourt.actionsShowMyDiscourt)
 
 
 module.exports= router;

@@ -32,5 +32,6 @@ const isNotAuthenticated = (req,res,next) => {
 }
 router.post("/",isAuthenticated,actionReunion.actionPostOneReunion)
 
-
+router.get("/all",isAuthenticated,actionReunion.actionShowAllReunion)
+router.get("/myreunions",isAuthenticated,actionReunion.actionsShowMyReunions)
 module.exports= router;
