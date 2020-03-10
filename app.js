@@ -7,6 +7,7 @@ const expressHandlebars = require('express-handlebars');
 const flash = require('connect-flash');
 const session = require('express-session');
 const ficConfig = require("./config/config")
+const connectDB= require('./database');
 require('./config/validation/passport')
 
 const mongoose = require('mongoose')
@@ -14,7 +15,9 @@ const passport = require('passport')
 
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/STL')
+//Connexion to MongoDB
+//mongoose.connect('mongodb://localhost/STL')
+connectDB()
 const app = express();
 app.use(morgan('dev'));
 
