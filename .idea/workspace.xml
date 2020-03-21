@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cebe408-1054-4a45-a5db-22e02ee7ce64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/processDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/processDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/routeDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/routeDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/utilsDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/utilsDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Reunion/actionReunion.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Reunion/actionReunion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Reunion/modelReunion.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Reunion/modelReunion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Reunion/processReunion.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Reunion/processReunion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Reunion/routeReunion.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Reunion/routeReunion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/User/actionUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/User/actionUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="66" column="18" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="18" />
+              <caret line="69" column="18" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -84,7 +74,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ressources/Discourt/utilsDiscourt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="51">
               <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
             </state>
           </provider>
@@ -194,10 +184,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1109" />
-    <option name="y" value="8" />
-    <option name="width" value="697" />
-    <option name="height" value="775" />
+    <option name="x" value="-1608" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -262,7 +252,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584818722016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584818990134" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SLT_Front" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -339,16 +329,15 @@
       <workItem from="1584303969370" duration="790000" />
       <workItem from="1584355910049" duration="10916000" />
       <workItem from="1584569984239" duration="577000" />
-      <workItem from="1584730244274" duration="11978000" />
+      <workItem from="1584730244274" duration="12297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402070000" />
+    <option name="totallyTimeSpent" value="402389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18830334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -582,7 +571,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="18" />
+          <caret line="69" column="18" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -616,7 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ressources/Discourt/utilsDiscourt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="51">
           <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
         </state>
       </provider>
