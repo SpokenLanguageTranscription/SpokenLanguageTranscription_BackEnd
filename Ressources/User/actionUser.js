@@ -23,11 +23,10 @@ module.exports = {
                 res.status(200).json(result)
             })
             .catch((err) => {
-                res.status(400).json(err)
+                console.log("err",err)
+                res.status(400).send(err.Error)
             })
-            .catch((err) => {
-                res.status(403).json(err)
-            })
+
 
     },
     decrypt(req, res) {

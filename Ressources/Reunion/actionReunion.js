@@ -3,6 +3,7 @@ const processReunion = require('./processReunion');
 
 module.exports={
     actionsShowMyReunions:(req,res)=>{
+        console.log("email (ationShowMyReunion)",req.body.email)
         processReunion.processShowMyReunions(req.body.email)
             .then((result)=>{
                 res.status(200).send(result)
@@ -10,6 +11,19 @@ module.exports={
             .catch((err)=>{
                 res.status(400).send("problème serveur.")
             })
+    },
+    actionsDeleteMyReunions:(req,res)=>{
+        console.log("idReunion (ationDeleteMyReunion)",req.body.idReunion)
+
+        processReunion.processDeleteMyReunions(req.params.idReunion)
+            .then((result)=>{
+                res.status(200).send(result)
+            })
+            .catch((err)=>{
+                if (err==404) res.status(err).send("Aucune réunion trouvé.")
+                if (err==400) res.status(err).send("Un problème est survenu au moment de la supression.")
+            })
+
     },
     actionShowAllReunion:(req,res)=>{
         processReunion.processShowAllReunion()
@@ -28,7 +42,7 @@ module.exports={
                 idReunion: req.body.idReunion,
                 sujet : req.body.sujet,
                 createur: req.body.createur,
-                participant: req.body.participant,
+                participants: req.body.participants,
 
 
             });

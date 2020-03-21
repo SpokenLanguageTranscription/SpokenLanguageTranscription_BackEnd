@@ -4,7 +4,8 @@ const processDiscourt = require('./processDiscourt');
 module.exports={
 
     actionsShowMyDiscourt:(req,res)=>{
-        processDiscourt.processShowMyDiscourts(req.body.idReunion)
+        console.log("showmyDiscourt:",req.params.idReunion)
+        processDiscourt.processShowMyDiscourts(req.params.idReunion,req.params.email)
             .then((result)=>{
                 res.status(200).send(result)
             })

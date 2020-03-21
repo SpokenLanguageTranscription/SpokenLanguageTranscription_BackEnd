@@ -30,17 +30,17 @@ module.exports={
 
 
     },
-    processShowMyDiscourts:async (idReunion)=>{
+    processShowMyDiscourts:async (idReunion,email)=>{
 
 
 
         return new Promise((resolve,reject) => {
 
-            return  utilsDiscourt.callbackFindReunion(idReunion).then((rst,err)=>{
+            return  utilsDiscourt.callbackFindReunion(idReunion,email).then((rst,err)=>{
                 console.log("result",rst)
                 if(rst){
-
-                    Discourt.find({ idReunion: idReunion},(err, reunion)=> {
+                    if(idReunion != null){
+                        Discourt.find({ idReunion: idReunion},(err, reunion)=> {
                             if (err){
                                 reject(400)
                             } else {
@@ -48,6 +48,18 @@ module.exports={
                                 //resolve(JSON.stringify(reunion))
                             }
                         })
+                    }else{
+                        Discourt.find({ idReunion: rst.idReunion},(err, reunion)=> {
+                            if (err){
+                                reject(400)
+                            } else {
+                                resolve(reunion)
+                                //resolve(JSON.stringify(reunion))
+                            }
+                        })
+
+                    }
+
 
                 }else {
                     reject(500)

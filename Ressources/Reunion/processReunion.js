@@ -10,9 +10,10 @@ module.exports={
                return  utilsReunion.callbackFindReunion(newReunion).then((rst,err)=>{
                     console.log("result",rst)
                     if(!rst){
+                        console.log("Reunion (ProcessReunion/AddOneReunion)",newReunion)
                         newReunion.save()
                             .then((result)=>{
-                                resolve({'Reunion enregistrer !': result})
+                                resolve({'reunion': result})
                             })
                             .catch((err)=>{
                                 reject(500);
@@ -50,6 +51,20 @@ module.exports={
             })
         })
     },
-
+    processDeleteMyReunions:(id)=>{
+        return new Promise ((resolve,reject)=>{
+            Reunion.remove({idReunion: id},(err,reunion)=>{
+                if(!reunion){
+                    reject(404)
+                } else{
+                    if(err){
+                        reject(400)
+                    } else{
+                        resolve('Reunion deleted')
+                    }
+                }
+            })
+        })
+    }
 
 }
