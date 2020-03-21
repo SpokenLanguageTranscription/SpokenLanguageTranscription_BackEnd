@@ -1,5 +1,20 @@
-const processUser = require('./processUsers');
-const modelsUser = require('./modelUser');
+
+
+//********Modules************/
+
+
+//pour controler les inputs du password
+const Joi    = require('joi')
+const processUser = require('./processUsers')
+const passport = require('passport')
+const randomstring = require('randomstring')
+const mailer = require('../../misc/mailer')
+const mailHTML = require('./mailRegistration')
+const userSchema = Joi.object().keys({
+      email : Joi.string().email().required(),
+      password : Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/),
+      confirmationPassword : Joi.any().valid(Joi.ref('password')).required()
+})
 
 module.exports = {
 
