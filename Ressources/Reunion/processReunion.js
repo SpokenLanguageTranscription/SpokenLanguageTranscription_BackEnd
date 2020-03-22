@@ -51,6 +51,26 @@ module.exports={
             })
         })
     },
+    processShowMyLastReunions:(email)=>{
+        return new Promise((resolve,reject)=>{
+            Reunion.findOne({createur:email}, {}, {sort: { createdAt: 'Desc' }},(err, reunion)=> {
+
+                if (reunion){
+
+                    resolve(reunion)
+                } else{
+                    if (err){
+                        console.log('problème de recherche')
+                        reject('problème du callback du recherche')
+                    } else{
+                        resolve(false)
+                    }
+                }
+            })
+        })
+    },
+
+
     processDeleteMyReunions:(id)=>{
         return new Promise ((resolve,reject)=>{
             Reunion.remove({idReunion: id},(err,reunion)=>{

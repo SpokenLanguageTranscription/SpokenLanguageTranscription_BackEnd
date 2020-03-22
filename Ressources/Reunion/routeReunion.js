@@ -33,6 +33,7 @@ const isNotAuthenticated = (req,res,next) => {
 router.post("/",isAuthenticated,actionReunion.actionPostOneReunion)
 
 router.get("/all",isAuthenticated,actionReunion.actionShowAllReunion)
+router.post("/last",isAuthenticated,actionReunion.actionsShowMyLastReunions)
 router.post("/mesreunions",isAuthenticated,actionReunion.actionsShowMyReunions)
 router.delete("/mesreunions/:idReunion",isAuthenticated,actionReunion.actionsDeleteMyReunions)
 module.exports= router;

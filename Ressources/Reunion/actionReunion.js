@@ -11,6 +11,15 @@ module.exports={
             .catch((err)=>{
                 res.status(400).send("problème serveur.")
             })
+    },    actionsShowMyLastReunions:(req,res)=>{
+        console.log("email (ationShowMyReunion)",req.body.email)
+        processReunion.processShowMyLastReunions(req.body.email)
+            .then((result)=>{
+                res.status(200).send(result)
+            })
+            .catch((err)=>{
+                res.status(400).send("problème serveur.")
+            })
     },
     actionsDeleteMyReunions:(req,res)=>{
         console.log("idReunion (ationDeleteMyReunion)",req.body.idReunion)
