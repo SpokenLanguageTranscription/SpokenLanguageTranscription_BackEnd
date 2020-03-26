@@ -9,7 +9,8 @@ const session = require('express-session');
 const ficConfig = require("./config/config")
 const connectDB= require('./database');
 require('./config/validation/passport')
-
+// const port = 3030;
+let port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const passport = require('passport')
 
@@ -73,4 +74,4 @@ app.use((req, res, next) => {
 
   next()
 });
-app.listen(5000, () => console.log('Server started listening on port 5000!'));
+app.listen(port, () => console.log('Server started listening on port 5000!'));
