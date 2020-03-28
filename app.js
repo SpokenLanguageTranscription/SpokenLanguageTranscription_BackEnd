@@ -10,6 +10,7 @@ const ficConfig = require("./config/config")
 const connectDB= require('./database');
 require('./config/validation/passport')
 // const port = 3030;
+
 let port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const passport = require('passport')
