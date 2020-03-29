@@ -12,6 +12,37 @@ module.exports={
             .catch((err)=>{
                 res.status(400).send("problème serveur.")
             })
+    },actionsNbDiscByUser:(req,res)=>{
+        console.log("showmyDiscourt:",req.body.idReunion)
+        processDiscourt.processShowMyDiscourts(req.body.idReunion,req.body.email)
+            .then((result)=>{
+               //
+                console.log("resultat nb discourt by user :",result)
+                var tableauGlobal=[] ;
+                var tabFilter = 0
+                var tabNoms = []
+
+                var tabFinal=[]
+                for (let x in result) tableauGlobal.push(result[x]);
+
+                tabNoms = tableauGlobal.map((element)=>{
+                    return element.auteur
+                })
+                tabNoms =[...new Set(tabNoms)]
+                tabFinal = tabNoms.map((elem)=>{
+                    tabFilter = tableauGlobal.filter((element,)=>{
+
+                        if(elem==element.auteur)return elem
+
+                    })
+                    console.log("TabFilter",tabFilter.length)
+                    return {nom:elem,NbpPhrase: tabFilter.length}
+                })
+                res.status(200).send(tabFinal)
+            })
+            .catch((err)=>{
+                res.status(400).send("problème serveur.")
+            })
     },
 
     actionPostOneDiscourt:(req,res)=>{
