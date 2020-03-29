@@ -17,8 +17,8 @@ module.exports={
 
     actionsShowMyDiscourtToParticipant:(req,res)=>{
         
-        console.log("showmyDiscourt:",req.params.idReunion)
-        processDiscourt.processShowMyDiscourtsToParticipant(req.params.idReunion)
+        console.log("showmyDiscourttt:",req.body.idReunion)
+        processDiscourt.processShowMyDiscourtsToParticipant(req.body.idReunion)
             .then((result)=>{
                 res.status(200).send(result)
             })

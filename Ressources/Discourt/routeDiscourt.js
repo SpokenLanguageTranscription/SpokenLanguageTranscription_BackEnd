@@ -33,6 +33,6 @@ const isNotAuthenticated = (req,res,next) => {
 router.post("/",actionDiscourt.actionPostOneDiscourt)
 router.get("/:email/:idReunion",actionDiscourt.actionsShowMyDiscourt)
 router.get("/:email/",actionDiscourt.actionsShowMyDiscourt)
-router.get("/:idReunion", actionDiscourt.actionsShowMyDiscourtToParticipant)
+router.post("/participant/" ,actionDiscourt.actionsShowMyDiscourtToParticipant)
 
 module.exports= router;

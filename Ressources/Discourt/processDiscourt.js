@@ -82,7 +82,7 @@ module.exports={
 
                     if(idReunion != null){
                       
-                        Discourt.find({ idReunion: rst.idReunion},(err, reunion)=> {
+                        Discourt.find({ idReunion: idReunion},(err, reunion)=> {
                             if (err){
                                 reject(400)
                             } else {
