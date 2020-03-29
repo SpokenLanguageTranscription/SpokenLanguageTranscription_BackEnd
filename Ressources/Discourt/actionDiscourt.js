@@ -4,6 +4,7 @@ const processDiscourt = require('./processDiscourt');
 module.exports={
 
     actionsShowMyDiscourt:(req,res)=>{
+        
         console.log("showmyDiscourt:",req.params.idReunion)
         processDiscourt.processShowMyDiscourts(req.params.idReunion,req.params.email)
             .then((result)=>{
@@ -39,6 +40,18 @@ module.exports={
                     return {nom:elem,NbpPhrase: tabFilter.length}
                 })
                 res.status(200).send(tabFinal)
+            })
+            .catch((err)=>{
+                res.status(400).send("problème serveur.")
+            })
+    },
+
+    actionsShowMyDiscourtToParticipant:(req,res)=>{
+        
+        console.log("showmyDiscourttt:",req.body.idReunion)
+        processDiscourt.processShowMyDiscourtsToParticipant(req.body.idReunion)
+            .then((result)=>{
+                res.status(200).send(result)
             })
             .catch((err)=>{
                 res.status(400).send("problème serveur.")

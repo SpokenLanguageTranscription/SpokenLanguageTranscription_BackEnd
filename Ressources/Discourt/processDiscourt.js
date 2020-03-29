@@ -74,6 +74,32 @@ module.exports={
 
     },
 
+    processShowMyDiscourtsToParticipant:async (idReunion)=>{
+
+
+
+        return new Promise((resolve,reject) => {
+
+                    if(idReunion != null){
+                      
+                        Discourt.find({ idReunion: idReunion},(err, reunion)=> {
+                            if (err){
+                                reject(400)
+                            } else {
+                                resolve(reunion)
+                                //resolve(JSON.stringify(reunion))
+                            }
+                        })
+
+                    }
+
+            })
+
+
+
+
+    }
+
 }
 
 

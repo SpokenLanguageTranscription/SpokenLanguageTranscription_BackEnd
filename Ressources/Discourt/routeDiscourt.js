@@ -34,5 +34,6 @@ router.post("/",actionDiscourt.actionPostOneDiscourt)
 router.get("/:email/:idReunion",actionDiscourt.actionsShowMyDiscourt)
 router.post("/indicateur1",actionDiscourt.actionsNbDiscByUser)
 router.get("/:email/",actionDiscourt.actionsShowMyDiscourt)
+router.post("/participant/" ,actionDiscourt.actionsShowMyDiscourtToParticipant)
 
 module.exports= router;
