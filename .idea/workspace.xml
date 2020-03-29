@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cebe408-1054-4a45-a5db-22e02ee7ce64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ressources/Discourt/routeDiscourt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ressources/Discourt/routeDiscourt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/buffer-util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/event-target.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/extension.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/permessage-deflate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/receiver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/sender.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/websocket-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/lib/websocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io-client/node_modules/ws/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/engine.io/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/isarray/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/isarray/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/isarray/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/binary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-client/node_modules/socket.io-parser/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/socket.io-parser/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="273">
+              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -248,10 +186,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1608" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -303,7 +241,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585508718032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585512211161" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -386,13 +324,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="434979000" />
+    <option name="totallyTimeSpent" value="436337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-1608" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16452442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,7 +347,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34869432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2899106" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -681,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ressources/Discourt/actionDiscourt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="273">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
         </state>
       </provider>
     </entry>
